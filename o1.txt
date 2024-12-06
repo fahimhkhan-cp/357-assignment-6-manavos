@@ -1,2 +1,1 @@
-percent:Income.Persons Below Poverty Level
 percent:Education.High School or Higher:le:80:Income.Persons Below Poverty Level
