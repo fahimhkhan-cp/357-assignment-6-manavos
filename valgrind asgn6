@@ -1,0 +1,33 @@
+anavos@unix1:~/cpe357/asgn6 $ valgrind --leak-check=yes ./a.out small.csv pop.ops
+==22207== Memcheck, a memory error detector
+==22207== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==22207== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
+==22207== Command: ./a.out small.csv pop.ops
+==22207== 
+Entries Loaded: 13
+==22207== 
+==22207== HEAP SUMMARY:
+==22207==     in use at exit: 0 bytes in 0 blocks
+==22207==   total heap usage: 8 allocs, 8 frees, 4,391 bytes allocated
+==22207== 
+==22207== All heap blocks were freed -- no leaks are possible
+==22207== 
+==22207== For lists of detected and suppressed errors, rerun with: -s
+==22207== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+anavos@unix1:~/cpe357/asgn6 $ valgrind --leak-check=yes ./a.out county_demographics.csv pop.ops
+==22772== Memcheck, a memory error detector
+==22772== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==22772== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
+==22772== Command: ./a.out county_demographics.csv pop.ops
+==22772== 
+Entries Loaded: 3143
+==22772== 
+==22772== HEAP SUMMARY:
+==22772==     in use at exit: 0 bytes in 0 blocks
+==22772==   total heap usage: 8 allocs, 8 frees, 4,391 bytes allocated
+==22772== 
+==22772== All heap blocks were freed -- no leaks are possible
+==22772== 
+==22772== For lists of detected and suppressed errors, rerun with: -s
+==22772== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+anavos@unix1:~/cpe357/asgn6 $ 
